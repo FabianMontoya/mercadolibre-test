@@ -62,8 +62,8 @@ El API puede ser consumido desde la siguiente URL: https://us-central1-api-merca
 _Las herramientas utilizadas para crear este proyecto_
 
 * [Node.js](https://nodejs.org/es/) - Lenguaje usado para el back end y toda la construcción del API
-* [Express](https://maven.apache.org/) - Framework para Node.js más común y usado para el desarrollo de apps web con Node.js
-* [Axios](https://rometools.github.io/rome/) - Usado para consumo de API externas
+* [Express](https://expressjs.com/es/) - Framework para Node.js más común y usado para el desarrollo de apps web con Node.js
+* [Axios](https://www.npmjs.com/package/axios) - Usado para consumo de API externas
 * [Mercadolibre Api](https://api.mercadolibre.com/items/#options) - Usado para consulta de precios e info de items
 
 ## Versionado 📌
