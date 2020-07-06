@@ -55,6 +55,8 @@ En `item_ids` se retorna la información de los productos que pueden ser redimid
 
 En `total` se retorna el monto total que ocupan los productos incluidos en el cupón.
 
+El API puede ser consumido desde la siguiente URL: https://us-central1-api-mercadolibre-fabian.cloudfunctions.net/function-1/api/coupon
+
 ## Construido con 🛠️
 
 _Las herramientas utilizadas para crear este proyecto_
