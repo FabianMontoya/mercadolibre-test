@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-// Consumo del API de cupón, se validará si el monto del cupón es suficiente para ser canjeado según una lista de productos recibida
+// Buscar un usuario especifico (email)
+// api/users/find/fabianmontoya97@gmail.com(encriptado en base64)
 router.post('/', async (req, res) => {  
     try{
         var data = req.body;
@@ -45,7 +46,7 @@ function calculate(items, amount){
     for(var i in items){
         let item = items[i];
         //Verificamos que el item no haya sido ya ingresado entre los descontados, si ya existe, lo omitimos
-        if(result.filter(item => item == item.item_id).length == 0 && item.precio > 0){
+        if((result.filter(a => a == item.item_id).length == 0) && item.precio > 0){
             let acumuladoPlus = acumulado + item.precio;
             //Verificamos si sumando el precio de este item se supera el monto máximo
             if(acumuladoPlus <= amount){
