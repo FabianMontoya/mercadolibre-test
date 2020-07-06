@@ -2,8 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-// Buscar un usuario especifico (email)
-// api/users/find/fabianmontoya97@gmail.com(encriptado en base64)
+// Consumo del API de cupón, se validará si el monto del cupón es suficiente para ser canjeado según una lista de productos recibida
 router.post('/', async (req, res) => {  
     try{
         var data = req.body;
